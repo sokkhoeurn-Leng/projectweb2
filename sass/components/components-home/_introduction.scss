@@ -14,6 +14,7 @@ nav {
     h2 {
       color: #ff9800;
       margin-bottom: 15px;
+      transition: 0.5s;
     }
     .intro{
         background: #0a1017;
@@ -37,6 +38,7 @@ nav {
         display: flex;
         border-radius: 20px;
         box-shadow: 2px 2px 6px gray;
+        
     }
     .broverview p{
         font-size: 17px;
@@ -56,7 +58,6 @@ nav {
     max-width: 900px;
     margin: auto;
   }
-
   ul {
     list-style: none;
     padding-left: 0;
@@ -68,7 +69,7 @@ nav {
     margin-bottom: 8px;
   }
 
-  li::before {
+  .ct li::before {
     content: "🔹";
     position: absolute;
     left: 0;

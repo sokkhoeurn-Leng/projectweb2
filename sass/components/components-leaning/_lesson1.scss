@@ -1,0 +1,38 @@
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .cards {
+      background: #343030;
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+      box-shadow: 2px 2px 6px rgb(76, 73, 73);
+    }
+    .cards h2 {
+      margin-top: 0;
+      font-size: 24px;
+      color: #f5d222;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 8px;
+    }
+    .cards h3 {
+      margin-top: 15px;
+      color: #157ec5;
+      font-size: 18px;
+    }
+    ul {
+      margin: 8px 0 15px 20px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .cards li strong{
+        color: #d98f10;
+    }
+    .cards p strong{
+        color: #d98f10;
+    }

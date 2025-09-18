@@ -1,1 +1,9 @@
-@import"./components-about/headers";
+@import "../components-about/headers";
+@import "../components-about/aboutit";
+@import "../components-about/ms&vs";
+@import "../components-about/link";
+
+*{
+    padding: 0;
+    margin: 0;
+}

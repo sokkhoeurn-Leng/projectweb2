@@ -1,0 +1,37 @@
+.ctlink{
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    transition: transform 0.2s ease;
+}
+.ctlink p{
+    font-size: 18px;
+    margin-left: 20px;
+}
+.ctlink img{
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgb(132, 122, 122);
+}
+
+@media (max-width: 768px){
+        .ctlink {
+            margin: 10px auto;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(141, 140, 140, 0.3);
+            flex-direction: column;
+        }
+
+        .ctlink p{
+            font-size: 16px;
+            padding: 20px;
+            margin: 0px;
+            
+        }
+        .ctlink img{
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
