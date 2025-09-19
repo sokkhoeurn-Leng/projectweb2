@@ -7,10 +7,14 @@ nav {
       text-decoration: none;
       font-weight: bold;
     }
-    section {
-      padding: 40px 20px;
-      max-width: 100%;
+    .container section {
+      background: #2d2b2b;
+      border-radius: 10px;
+      margin: 30px;
+      margin-bottom: 25px;
+      box-shadow: 2px 2px 6px rgb(76, 73, 73);
     }
+    
     h2 {
       color: #ff9800;
       margin-bottom: 15px;
@@ -31,24 +35,6 @@ nav {
     .intro img{
         box-shadow: 2px 2px 4px black;
     }
-    .broverview {
-        background: #0a1017;
-        padding: 10px;
-        margin: 10px;
-        display: flex;
-        border-radius: 20px;
-        box-shadow: 2px 2px 6px gray;
-        
-    }
-    .broverview p{
-        font-size: 17px;
-        margin-left: 40px;
-    }
-    .broverview img{
-      width: 30%;
-        box-shadow: 2px 2px 4px black;
-    }
-
     // overview
   .briefoverview {
     background-color: #ffffff;
@@ -124,14 +110,13 @@ nav {
         font-size:0.8rem;
         text-align: justify;
       }
+      .briefoverview h2{
+          font-size: 1em;
+      }
+      .br li{
+          font-size: 12px;
+      }
     }
-    @media (max-width: 480px){
-    .briefoverview h2{
-        font-size: 1em;
-    }
-    .br li{
-        font-size: 12px;
-    }
-}
+
 
 
