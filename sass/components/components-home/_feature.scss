@@ -18,5 +18,13 @@
       margin-top: 0;
       color: #4cafef;
     }
+    @media (max-width: 480px){
+      .course h3{
+        font-size: 1em;
+      }
+      .course p{
+        font-size: 12px;
+      }
+    }
 
    

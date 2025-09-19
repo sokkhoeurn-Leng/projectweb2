@@ -105,12 +105,12 @@ nav {
       }
 
       h2 {
-        font-size: 1.5em;
+        font-size: 1em;
         text-align: center;
       }
 
       .intro p{
-        font-size: 15px;
+        font-size: 10px;
         margin: 20px;
       }
       .intro img{
@@ -121,9 +121,17 @@ nav {
 
     @media (max-width: 480px) {
       .intro p{
-        font-size:0.9rem;
+        font-size:0.8rem;
         text-align: justify;
       }
     }
+    @media (max-width: 480px){
+    .briefoverview h2{
+        font-size: 1em;
+    }
+    .br li{
+        font-size: 12px;
+    }
+}
 
 

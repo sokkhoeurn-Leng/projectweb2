@@ -121,6 +121,12 @@ header {
 }
 
 @media (max-width: 768px) {
+  .about h2 {
+    font-size: 1em;
+  }
+  .about h1 {
+    font-size: 1.3rem;
+  }
   .abt {
     margin: 10px auto;
     background: rgba(255, 255, 255, 0.05);
@@ -130,7 +136,7 @@ header {
     flex-direction: column;
   }
   .abt p {
-    font-size: 16px;
+    font-size: 12px;
     padding: 20px;
     margin: 0px;
   }
@@ -185,7 +191,7 @@ header {
     flex-direction: column;
   }
   .mission p {
-    font-size: 16px;
+    font-size: 12px;
     padding: 20px;
     margin: 0px;
   }
@@ -202,7 +208,7 @@ header {
     flex-direction: column;
   }
   .vision p {
-    font-size: 16px;
+    font-size: 12px;
     padding: 20px;
     margin: 0px;
   }
@@ -239,7 +245,7 @@ header {
     flex-direction: column;
   }
   .ctlink p {
-    font-size: 16px;
+    font-size: 12px;
     padding: 20px;
     margin: 0px;
   }

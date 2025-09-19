@@ -48,4 +48,32 @@ body {
     li {
       margin-bottom: 6px;
     }
+    @media (max-width: 480px){
+        .headers h1 {
+          margin: 0;
+          font-size: 16px;
+        }
+        .headers p {
+          margin: 8px 0 0;
+          font-size: 12px;
+        }
+        .card h2 {
+           font-size: 1rem;
+        }
+        .card h3{
+          font-size: 1em;
+        }
+        li {
+          font-size: 0.7em;
+        }
+        .headers h1{
+          font-size: 1.2em;
+        }
+        .headers p{
+          font-size: 0.8em;
+        }
+        .card p{
+          font-size: 0.9em;
+        }
+    }
    

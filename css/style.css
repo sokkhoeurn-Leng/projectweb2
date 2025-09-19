@@ -1,5 +1,9 @@
 @charset "UTF-8";
-/* Body */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #0d1117;
@@ -9,14 +13,12 @@ body {
 
 /* Navigation */
 header {
+  padding: 10px;
   position: sticky;
   z-index: 99;
   top: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background: linear-gradient(to left top, black, teal);
-}
-header .nav {
-  margin: 0px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,7 +38,7 @@ header .nav {
 
 .nav-links li {
   display: inline;
-  margin-left: 20px;
+  margin: 0px 0px;
 }
 
 .nav-links a {
@@ -52,8 +54,8 @@ header .nav {
 }
 
 @media (max-width: 480px) {
-  .nav-links li {
-    font-size: 9px;
+  .nav-links a {
+    font-size: 10px;
   }
 }
 /* Hero Section */
@@ -103,10 +105,10 @@ header .nav {
     width: 83%;
   }
   .hero h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .hero p {
-    font-size: 15px;
+    font-size: 10px;
   }
 }
 nav {
@@ -223,11 +225,11 @@ ul ul li::before {
     padding: 10px;
   }
   h2 {
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: center;
   }
   .intro p {
-    font-size: 15px;
+    font-size: 10px;
     margin: 20px;
   }
   .intro img {
@@ -237,8 +239,16 @@ ul ul li::before {
 }
 @media (max-width: 480px) {
   .intro p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-align: justify;
+  }
+}
+@media (max-width: 480px) {
+  .briefoverview h2 {
+    font-size: 1em;
+  }
+  .br li {
+    font-size: 12px;
   }
 }
 .footer {
@@ -281,7 +291,11 @@ ul ul li::before {
   color: #4cafef;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+@media (max-width: 480px) {
+  .course h3 {
+    font-size: 1em;
+  }
+  .course p {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */
