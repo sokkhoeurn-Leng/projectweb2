@@ -93,7 +93,7 @@
                     <li>Using forensic tools to trace attacks.</li>
                 </ul>
             </div>
-            <div class="card">
+            <div class="cards">
                 <h2>5. Curriculum Flow</h2>
                 <ul>
                     <li><strong>Beginner →</strong> Cyber Hygiene.</li>
@@ -166,7 +166,7 @@
                 </div>
             </div>
         <div class="headers">
-            <h1>Fundamentals of Cybersecurity</h1>
+            <h1>🛡️ Lesson1: Fundamentals of Cybersecurity</h1>
             <p>Core principles, components, stages, threats, and countermeasures for protecting digital systems.</p>
         </div>
         <div class="container">
@@ -240,6 +240,7 @@
                     <li>Defending against failures or attacks like Distributed Denial of Service (DDoS).</li>
                 </ul>
             </div>
+            
             <div class="cards">
                 <h2>Threats, Vulnerabilities, and Risks</h2>
                 <h3>Threats</h3>
@@ -270,6 +271,353 @@
             </div>
         </div>
         <div class="headers">
+            <h1>🌐 Lesson2: Introduction to Web Application Vulnerabilities</h1>
+            <p>Understand common vulnerabilities, risks, and prevention strategies</p>
+        </div>
+        <div class="container">
+            <div class="cards">
+                <h2>1. Learning Objectives</h2>
+                <p>By the end of this lesson, learners should be able to:</p>
+                <ul>
+                    <li>Define what web application vulnerabilities are.</li>
+                    <li>Identify common types of vulnerabilities.</li>
+                    <li>Understand the risks they pose to businesses and users.</li>
+                    <li>Recognize basic prevention and mitigation strategies.</li>
+                </ul>
+            </div>
+            <div class="cards">
+                <h2>2. What are Web Application Vulnerabilities?</h2>
+                <p>A <span class="highlight">web application vulnerability</span> is a weakness in a web-based system that attackers can exploit to gain unauthorized access, manipulate data, or disrupt services.</p>
+                <p>Think of it like a <strong>hole in a wall</strong>: if attackers find it, they can break in.</p>
+                <p>They often come from coding mistakes, poor configuration, or weak security practices.</p>
+            </div>
+            <div class="cards">
+                <h2>3. Common Web Application Vulnerabilities</h2>
+
+                <h3>🔐 3.1 Injection (SQL Injection)</h3>
+                <p><strong>What:</strong> Attacker inserts malicious code into input fields.</p>
+                <p><strong>Impact:</strong> Can steal or delete databases.</p>
+                <p><strong>Example:</strong> <code>' OR 1=1 --</code></p>
+                <p><strong>Mitigation:</strong> Use parameterized queries & input validation.</p>
+
+                <h3>🔑 3.2 Broken Authentication</h3>
+                <p><strong>What:</strong> Weak login systems allow impersonation.</p>
+                <p><strong>Impact:</strong> Unauthorized account access.</p>
+                <p><strong>Example:</strong> Predictable tokens, no MFA.</p>
+                <p><strong>Mitigation:</strong> Strong passwords, MFA, secure sessions.</p>
+
+                <h3>📂 3.3 Sensitive Data Exposure</h3>
+                <p><strong>What:</strong> Poorly protected data like passwords or credit cards.</p>
+                <p><strong>Impact:</strong> Identity theft, fraud, reputational damage.</p>
+                <p><strong>Example:</strong> Storing passwords in plain text.</p>
+                <p><strong>Mitigation:</strong> Encrypt data, hash passwords with bcrypt/Argon2.</p>
+
+                <h3>🌍 3.4 Cross-Site Scripting (XSS)</h3>
+                <p><strong>What:</strong> Injecting malicious scripts into web pages.</p>
+                <p><strong>Impact:</strong> Steal cookies, redirect users, deface websites.</p>
+                <p><strong>Example:</strong> <code>&lt;script&gt;alert('Hacked!')&lt;/script&gt;</code></p>
+                <p><strong>Mitigation:</strong> Sanitize input, escape output, use CSP.</p>
+
+                <h3>🔓 3.5 Security Misconfiguration</h3>
+                <p><strong>What:</strong> Using default settings or exposing debug pages.</p>
+                <p><strong>Impact:</strong> Easy entry point for attackers.</p>
+                <p><strong>Example:</strong> Admin panel left open without password.</p>
+                <p><strong>Mitigation:</strong> Change defaults, disable unused features.</p>
+            </div>
+
+            <div class="cards">
+                <h2>4. Why Do These Vulnerabilities Matter?</h2>
+                <ul>
+                    <li><strong>Financial Losses:</strong> Data breaches can cost millions.</li>
+                    <li><strong>Trust Issues:</strong> Customers may stop using insecure services.</li>
+                    <li><strong>Legal Consequences:</strong> GDPR, HIPAA violations.</li>
+                    <li><strong>Operational Impact:</strong> Downtime, ransomware attacks.</li>
+                </ul>
+            </div>
+
+            <div class="cards">
+                <h2>5. Prevention & Best Practices</h2>
+                <ul>
+                    <li>✅ Regularly update and patch software.</li>
+                    <li>✅ Perform penetration testing & vulnerability scanning.</li>
+                    <li>✅ Follow OWASP Top 10 guidelines.</li>
+                    <li>✅ Train developers & staff on secure coding.</li>
+                </ul>
+            </div>
+
+            <div class="cards">
+                <h2>6. Quick Activity</h2>
+                <p><strong>Scenario:</strong> A shopping site allows product search via a text box.</p>
+                <p>A hacker enters: <code>'; DROP TABLE products; --</code></p>
+                <p><strong>Question:</strong> What vulnerability is being exploited, and how can it be prevented?</p>
+                <p><em>Answer: SQL Injection, prevented by parameterized queries.</em></p>
+            </div>
+        </div>
+        <div class="headers">
+            <h1>🔑 Lesson3: Authentication and Access Control</h1>
+            <p>Core concepts, methods, risks, and best practices for protecting digital systems</p>
+        </div>
+        <div class="container">
+            <div class="cards">
+                <h2>1. Learning Objectives</h2>
+                <ul>
+                    <li>Define authentication and access control.</li>
+                    <li>Understand common methods of authentication.</li>
+                    <li>Recognize access control models and their applications.</li>
+                    <li>Identify risks and vulnerabilities in weak authentication or access control.</li>
+                    <li>Apply basic prevention and best practices.</li>
+                </ul>
+            </div>
+            <div class="cards">
+                <h2>2. What is Authentication?</h2>
+                <p>Authentication is the process of verifying the identity of a user, device, or system.</p>
+                <p>It answers the question: <strong>“Who are you?”</strong></p>
+                <p>Examples: Passwords, PIN codes, biometric scans, or digital certificates.</p>
+                <h3>Types of Authentication Factors</h3>
+                <ul>
+                    <li>Something you know – password, security questions.</li>
+                    <li>Something you have – smart card, token, mobile phone.</li>
+                    <li>Something you are – fingerprints, facial recognition, iris scan.</li>
+                    <li>Somewhere you are – geolocation-based checks.</li>
+                    <li>Something you do – typing speed, gesture patterns.</li>
+                </ul>
+                <p>Stronger security = <strong>Multi-Factor Authentication (MFA)</strong> → combining two or more factors.</p>
+            </div>
+            <div class="cards">
+                <h2>3. What is Access Control?</h2>
+                <p>Access Control determines what users can do once authenticated.</p>
+                <p>It answers the question: <strong>“What are you allowed to access?”</strong></p>
+                <p>Controls ensure users only access resources they are authorized for.</p>
+
+                <h3>Types of Access Control Models</h3>
+                <ul>
+                    <li><strong>Discretionary Access Control (DAC):</strong> Owner decides access. <em>Example: File owner shares access with specific people.</em></li>
+                    <li><strong>Mandatory Access Control (MAC):</strong> Based on security labels/classifications. <em>Example: Military systems with Top Secret/Confidential labels.</em></li>
+                    <li><strong>Role-Based Access Control (RBAC):</strong> Access based on user roles. <em>Example: HR can access payroll but not engineering designs.</em></li>
+                    <li><strong>Attribute-Based Access Control (ABAC):</strong> Access based on attributes like location, device, or time. <em>Example: Employee access only during working hours from company network.</em></li>
+                </ul>
+            </div>
+            <div class="cards">
+                <h2>4. Risks of Weak Authentication & Access Control</h2>
+                <ul>
+                    <li>Credential Theft – Stolen passwords lead to account compromise.</li>
+                    <li>Privilege Escalation – Attackers gain higher-level access.</li>
+                    <li>Insider Threats – Employees abusing privileges.</li>
+                    <li>Brute-Force Attacks – Automated guessing of weak credentials.</li>
+                    <li>Access Control Misconfiguration – Overly permissive settings give unnecessary access.</li>
+                </ul>
+            </div>
+            <div class="cards">
+                <h2>5. Prevention & Best Practices</h2>
+                <ul>
+                    <li>✅ Use strong, unique passwords with MFA.</li>
+                    <li>✅ Apply Principle of Least Privilege (PoLP).</li>
+                    <li>✅ Regularly review and update access permissions.</li>
+                    <li>✅ Use secure session management (timeouts, re-authentication).</li>
+                    <li>✅ Monitor login attempts and access logs for anomalies.</li>
+                    <li>✅ Encrypt credentials and sensitive data in transit & storage.</li>
+                </ul>
+            </div>
+            <div class="cards">
+                <h2>6. Quick Activity</h2>
+                <p><strong>Scenario:</strong> An employee leaves a company, but their account is not disabled. Months later, the account is used in a cyberattack.</p>
+                <p><strong>Question:</strong></p>
+                <ul>
+                    <li>Which security principle was violated?</li>
+                    <li>What control should have been implemented?</li>
+                </ul>
+                <p><strong>Answer:</strong> Violated principle: Least Privilege / Account Management. Control: Timely removal of access rights (deprovisioning).</p>
+            </div>
+        </div>
+        <div class="headers">
+            <h1>🔒 Lesson4: Encryption and HTTPS</h1>
+            <p>Understanding encryption, HTTPS, risks, and best practices for secure communication</p>
+        </div>
+        <div class="container">
+            <div class="cards">
+                <h2>1. Learning Objectives</h2>
+                <ul>
+                    <li>Understand what encryption is and why it’s important.</li>
+                    <li>Differentiate between symmetric and asymmetric encryption.</li>
+                    <li>Explain how HTTPS secures web communication.</li>
+                    <li>Identify risks if encryption is not used correctly.</li>
+                    <li>Apply best practices for using encryption and HTTPS.</li>
+                </ul>
+            </div>
+            <div class="cards">
+                <h2>2. What is Encryption?</h2>
+                <p>Encryption is the process of converting plain data into a coded format (ciphertext) so that only authorized parties can read it.</p>
+                <p>It protects sensitive information from unauthorized access.</p>
+                <p>Example: Encrypting a credit card number before storing it in a database.</p>
+
+                <h3>Types of Encryption</h3>
+                <ul>
+                    <li><strong>Symmetric Encryption:</strong> Same key used to encrypt and decrypt data. Example algorithms: AES, DES. Fast but key distribution is a challenge.</li>
+                    <li><strong>Asymmetric Encryption:</strong> Key pair (public/private). Example algorithms: RSA, ECC. More secure for exchanging data but slower.</li>
+                    <li><strong>Hashing:</strong> Converts data into a fixed-length string that cannot be reversed. Example: SHA-256 for passwords.</li>
+                </ul>
+            </div>
+
+            <div class="cards">
+                <h2>3. What is HTTPS?</h2>
+                <p>HTTPS (Hypertext Transfer Protocol Secure) is the secure version of HTTP.</p>
+                <p>It uses TLS or SSL to encrypt communication between a user’s browser and a web server.</p>
+                <p>HTTPS ensures:</p>
+                <ul>
+                    <li><strong>Confidentiality:</strong> Data cannot be read by attackers.</li>
+                    <li><strong>Integrity:</strong> Data cannot be altered during transit.</li>
+                    <li><strong>Authentication:</strong> Users communicate with the intended server via certificates.</li>
+                </ul>
+            </div>
+
+            <div class="cards">
+                <h2>4. Risks of Weak or Missing Encryption</h2>
+                <ul>
+                    <li>Data Interception – Sensitive information can be read in transit.</li>
+                    <li>Man-in-the-Middle (MITM) Attacks – Attackers can intercept/modify communication.</li>
+                    <li>Data Breaches – Unencrypted storage can be leaked if databases are compromised.</li>
+                    <li>Trust Issues – Browsers flag unencrypted sites, affecting user confidence.</li>
+                </ul>
+            </div>
+
+            <div class="cards">
+                <h2>5. Best Practices for Encryption and HTTPS</h2>
+                <ul>
+                    <li>✅ Always use HTTPS for all websites and APIs.</li>
+                    <li>✅ Use strong encryption algorithms (AES-256, RSA-2048+).</li>
+                    <li>✅ Enable TLS 1.2 or 1.3, disable older protocols.</li>
+                    <li>✅ Use secure certificate management (valid certificates, renewal, revocation).</li>
+                    <li>✅ Encrypt sensitive data at rest (databases, backups).</li>
+                    <li>✅ Avoid weak or hardcoded encryption keys.</li>
+                    <li>✅ Regularly test and update encryption methods.</li>
+                </ul>
+            </div>
+
+            <div class="cards">
+                <h2>6. Quick Activity</h2>
+                <p><strong>Scenario:</strong> A website stores user passwords in plain text and does not use HTTPS.</p>
+                <p><strong>Question:</strong></p>
+                <ul>
+                    <li>What are the main security risks in this scenario?</li>
+                    <li>How can these risks be mitigated?</li>
+                </ul>
+                <p><strong>Answer:</strong> Risks: Passwords can be stolen if the database is compromised, data in transit can be intercepted, users’ accounts and personal information are exposed.<br>
+                Mitigation: Use HTTPS to encrypt traffic, store passwords hashed with a strong algorithm (e.g., bcrypt), and ensure TLS certificates are valid and up-to-date.</p>
+            </div>
+        </div>
+
+        <div class="headers">
+            <h1>🛡️ Lesson5: Security Tools and Testing</h1>
+            <p>Understanding tools and methods to identify vulnerabilities and secure systems</p>
+        </div>
+        <div class="container">
+            <div class="cards">
+                <h2>1. Learning Objectives</h2>
+                <ul>
+                    <li>Understand the purpose of security tools in protecting systems.</li>
+                    <li>Identify common types of security testing.</li>
+                    <li>Recognize vulnerabilities using automated and manual testing methods.</li>
+                    <li>Apply best practices for maintaining a secure environment.</li>
+                </ul>
+            </div>
+
+            <div class="cards">
+                <h2>2. What is Security Testing?</h2>
+                <p>Security testing is the process of evaluating systems, networks, and applications to identify weaknesses or vulnerabilities that could be exploited by attackers.</p>
+                <p>Goal: Ensure <strong>confidentiality, integrity, and availability</strong> of information.</p>
+            </div>
+
+            <div class="cards">
+                <h2>3. Types of Security Testing</h2>
+                <h3>3.1 Vulnerability Scanning</h3>
+                <p>Automated scanning of systems to identify known vulnerabilities.</p>
+                <p><strong>Tools:</strong> Nessus, OpenVAS, Qualys</p>
+                <p><strong>Example:</strong> Detecting unpatched software or misconfigured services.</p>
+
+                <h3>3.2 Penetration Testing (Pen Testing)</h3>
+                <p>Simulated cyberattack to identify security weaknesses.</p>
+                <p>Can be black-box, white-box, or gray-box testing.</p>
+                <p><strong>Tools:</strong> Metasploit, Burp Suite, Kali Linux</p>
+                <p><strong>Example:</strong> Exploiting a web application to gain unauthorized access.</p>
+
+                <h3>3.3 Security Audits</h3>
+                <p>Comprehensive review of policies, procedures, and configurations.</p>
+                <p>Ensures compliance with standards (e.g., ISO 27001, NIST).</p>
+                <p><strong>Example:</strong> Checking if access controls follow the Principle of Least Privilege.</p>
+
+                <h3>3.4 Risk Assessment</h3>
+                <p>Identify and evaluate potential threats and their impact.</p>
+                <p>Helps prioritize which vulnerabilities to address first.</p>
+                <p><strong>Example:</strong> Determining the risk level of unencrypted databases containing sensitive customer data.</p>
+
+                <h3>3.5 Code Review and Static Analysis</h3>
+                <p>Manual or automated review of source code to detect security issues.</p>
+                <p><strong>Tools:</strong> SonarQube, Checkmarx</p>
+                <p><strong>Example:</strong> Finding SQL injection or hardcoded passwords in code.</p>
+            </div>
+
+            <div class="cards">
+                <h2>4. Common Security Tools</h2>
+                <table>
+                    <tr>
+                        <th>Tool Type</th>
+                        <th>Purpose</th>
+                        <th>Example Tools</th>
+                    </tr>
+                    <tr>
+                        <td>Vulnerability Scanner</td>
+                        <td>Identify known system vulnerabilities</td>
+                        <td>Nessus, OpenVAS</td>
+                    </tr>
+                    <tr>
+                        <td>Penetration Testing</td>
+                        <td>Simulate attacks to find weaknesses</td>
+                        <td>Metasploit, Burp Suite</td>
+                    </tr>
+                    <tr>
+                        <td>Network Monitoring</td>
+                        <td>Detect unusual activity</td>
+                        <td>Wireshark, Snort</td>
+                    </tr>
+                    <tr>
+                        <td>Password Cracking</td>
+                        <td>Test password strength</td>
+                        <td>Hashcat, John the Ripper</td>
+                    </tr>
+                    <tr>
+                        <td>Web Application Testing</td>
+                        <td>Detect web-specific vulnerabilities</td>
+                        <td>OWASP ZAP, Burp Suite</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="card">
+                <h2>5. Best Practices for Security Testing</h2>
+                <ul>
+                    <li>✅ Regularly perform vulnerability scans and penetration tests.</li>
+                    <li>✅ Keep security tools and signatures up to date.</li>
+                    <li>✅ Apply patches and updates promptly.</li>
+                    <li>✅ Use a combination of automated and manual testing.</li>
+                    <li>✅ Document and prioritize identified vulnerabilities.</li>
+                    <li>✅ Conduct tests in controlled environments to avoid disrupting production.</li>
+                </ul>
+            </div>
+
+            <div class="cards">
+                <h2>6. Quick Activity</h2>
+                <p><strong>Scenario:</strong> A company wants to ensure its new web application is secure before launch.</p>
+                <p><strong>Questions:</strong></p>
+                <ul>
+                    <li>Which types of security testing should be performed?</li>
+                    <li>Which tools could be used to identify potential vulnerabilities?</li>
+                </ul>
+                <p><strong>Answer:</strong> Security testing: Vulnerability scanning, penetration testing, code review, risk assessment.<br>
+                Tools: Nessus (vulnerability scanning), OWASP ZAP or Burp Suite (web app testing), SonarQube (code review).</p>
+            </div>
+
+        </div>
+        <div class="headers">
             <h1>Cybersecurity video Learning </h1>
             <p>Watch and learn the fundamentals of cybersecurity with these 9 essential videos</p>
         </div>
@@ -295,6 +643,7 @@
             <div class="cardv"><iframe src="https://www.youtube.com/watch?v=sF014G2BUXM" allowfullscreen></iframe><div class="content"><h3>Cloud Security Explained</h3><p>How cloud computing changes cybersecurity practices.</p></div></div>
             <div class="cardv"><iframe src="https://www.youtube.com/watch?v=XsdUV0iiiWY" allowfullscreen></iframe><div class="content"><h3>IoT Security Risks</h3><p>Security risks in Internet of Things (IoT) devices.</p></div></div>
             <div class="cardv"><iframe src="https://www.youtube.com/watch?v=N3-zrhoBx6w" allowfullscreen></iframe><div class="content"><h3>Dark Web Explained</h3><p>What the dark web is and its role in cybercrime.</p></div></div>
+            <div class="cardv"><iframe src="https://www.youtube.com/watch?v=mMXdpXouSLo" allowfullscreen></iframe><div class="content"><h3>Data Privacy Essentials</h3><p>Learn about protecting personal data and GDPR basics.</p></div></div>
             <div class="cardv"><iframe src="https://www.youtube.com/watch?v=mMXdpXouSLo" allowfullscreen></iframe><div class="content"><h3>Data Privacy Essentials</h3><p>Learn about protecting personal data and GDPR basics.</p></div></div>
         </section>   
     </body>

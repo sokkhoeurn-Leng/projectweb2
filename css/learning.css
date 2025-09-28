@@ -326,6 +326,26 @@ li {
   line-height: 1.4;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background: #0f766e;
+  color: white;
+}
+
 * {
   padding: 0;
   margin: 0;
